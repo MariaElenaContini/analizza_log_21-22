@@ -51,7 +51,7 @@ def tot_occ(log_list):
             tab_log_user[(log[1])]['tot_occ']=1
         else:
             tab_log_user[log[1]]['tot_occ']+=1
-    return tab_log_user
+    return dict(sorted(tab_log_user.items()))
 
 # sottoprogramma che mostra per ogni utente quante volte compie ogni evento
 
